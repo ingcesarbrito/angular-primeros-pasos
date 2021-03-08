@@ -1,0 +1,24 @@
+<hr>
+<ol>
+
+  <li *ngFor='let hero of superheroes'>
+
+    {{hero.name}} <br>
+
+        aka {{hero.alterEgo}} <br>
+
+        Supoerpowers
+
+    <ul *ngFor='let powers of hero.superpowers'>
+
+      <li>
+
+        {{powers}}
+
+      </li>
+
+    </ul>
+
+  </li>
+
+</ol>
